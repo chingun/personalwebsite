@@ -1,24 +1,18 @@
 import logo from './logo.svg';
-import './App.css';
+import './css/MeStyle.css';
+import Me from "./component/me.component";
+import { BrowserRouter as Router, Route} from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router> 
+          <head>
+            <title> Chingun Khasar </title>
+          </head>
+          {/* Private Area */}
+          <Route path="/" component = {Me} />
+      </Router>
   );
 }
 
