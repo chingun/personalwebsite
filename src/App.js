@@ -7,9 +7,6 @@ import { BrowserRouter as Router, Route} from "react-router-dom";
 function App() {
   return (
       <Router> 
-          <head>
-            <title> Chingun Khasar </title>
-          </head>
           {/* Private Area */}
           <Route path="/" component = {Me} />
       </Router>
