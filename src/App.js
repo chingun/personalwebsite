@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './css/MeStyle.css';
 import Me from "./component/me.component";
 import { BrowserRouter as Router, Route} from "react-router-dom";
