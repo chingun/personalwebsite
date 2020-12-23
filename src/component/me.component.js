@@ -54,6 +54,9 @@ class Me extends Component {
     }
 
     csml(){ 
+        if (this.state.location !== "csml"){
+            return(<></>)
+        }
           return(
             <div className="body">
                 <div className="brainbase">
@@ -91,6 +94,9 @@ class Me extends Component {
     }
       
     embedded(){
+        if (this.state.location !== "embedded"){
+            return(<></>)
+        }
         return(
             <div className="body">
                 <div className="embedbase">
