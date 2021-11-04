@@ -22,13 +22,16 @@ class Me extends Component {
         return(
             <div className="body">
             <p>
+                I am a graduate student at NYU studying <a onClick={() => {this.setState({location: 'csml'})}} className="inline-link">Deep Reinforcement Learning</a> for Robotic Applications.
+            </p>
+            <p>
                 I spend a lot of my time developing <a href="https://gitjournal.com" className="inline-link">Gitjournal</a>, Github for notes. </p> 
             <p>
-                During Daytime I work as a firmware engineer at <a href="https://apple.com" className="inline-link">Apple</a>.
+                Before grad school, I worked as a firmware engineer at <a href="https://apple.com" className="inline-link">Apple</a>.
             </p> 
             <p>
-                I am an electronics and computer science engineer who love building awesome things.</p><p>
-                I professionally develop <b>firmware </b> in Internet of Things &<br/> <b>full-stack</b> in web apps. <br/>
+                I am an computer engineer who love building awesome things.</p><p>
+                I professionally develop <b>firmware</b> in Internet of Things & <br/><b>full-stack</b> in web apps. <br/>
 
                 {/* i spend a lot of time w/ api’s these days, as the<br/>
                 founder of Alloy Automation (YC W20)<br/><br/>
@@ -71,17 +74,15 @@ class Me extends Component {
                     </div>	
                     <img src={layer4}/>
                 </div><br/><br/>
-                <h2>
-                Software
-                </h2>
+                <h2>  Software </h2>
                 <p>
-                After my introduction to web technologies, I started to love teaching myself different frameworks and modern tools and used them for my start-up.
+
                 </p>
                 <p>
                 <a href="https://gitjournal.com" className="inline-link">Git Journal</a>: A version controlled journalling application, built using the <b>MERN</b> stack, that offer a new kind of writing and authoring experience.
                 </p>
                 <p>
-                <a href="https://lookingbus.com" className="inline-link">Looking bus</a>: An <b>android app</b> that communicates with street beacon devices to make travel on buses easier and safer for blind or visually impaired people.
+                <a href="https://lookingbus.com/" className="inline-link">Looking bus</a>: An <b>android app</b> that communicates with street beacon devices to make travel on buses easier and safer for blind or visually impaired people.
                 </p>
                 <p className="footnotes">
                 <h3>Proficient Skills:</h3>
@@ -105,12 +106,11 @@ class Me extends Component {
                         <img src={heart} className="embed top"/>
                     </div>	
                 </div><br/><br/><br/>
-                <h2> Embedded Systems</h2>
+                <h2> Firmware Projects:</h2>
                 <p>I love both EE and CS. I find Embedded Systems to be the best of both worlds.</p>
-                <h2>Projects:</h2>
-                <p><a className="inline-link">Looking Bus Beacon</a>: A beacon device that make bus travel easy and safe for visually impaired people. </p>
-                <p><a className="inline-link">Crowd Sourced Rescue Robot</a>: Sending rescue robots into disaster struck areas to aid rescue workers through crowd help.</p>
-                <p><a className="inline-link">Virtual Reality Controller Headset</a>: Giving an intuitive and immersive control for the rescue worker with VR control.</p>
+                <p><a href="https://www.spaceplant.io" className="inline-link">Space Plant</a>: A plant app and sensor combo that tells you everything about your plant with capacitive sensors and AI. </p>
+                <p><a href="https://lookingbus.com/" className="inline-link">Looking Bus Beacon</a>: A beacon device that make bus travel easy and safe for visually impaired people. </p>
+                <p><a href="https://www.youtube.com/watch?v=RmNvX2cUl6A&ab_channel=ElectricalandComputerEngineeringatMichigan" className="inline-link">Crowd Sourced Rescue Robot</a>: Sending rescue robots into disaster struck areas to aid rescue workers through crowd help.</p>
                 <p className="footnotes">
                 <h3>Proficient Skills:</h3>
                  RTOS development <br/>Protocols & JTAG debugging<br/>Device Driver programming (LKM)<br/>FPGA & Assembly development<br/>Hardware Bring <br/>GPIO, I2C, SPI, UART and BLE communication
@@ -137,7 +137,7 @@ class Me extends Component {
                     <a className="h1-logo" onClick={() => {this.setState({location: 'about'})}}> chingun kh </a>
                 </h1>
                 <p className="navbar-links">
-                    <a onClick={() => {this.setState({location: 'embedded'})}}> Embedded </a>
+                    <a onClick={() => {this.setState({location: 'embedded'})}}> Firmware </a>
                     <a onClick={() => {this.setState({location: 'csml'})}}> CS & ML </a>
                     <a href="https://www.linkedin.com/in/chingun-khasar-93157a11a/"> linkedin </a>
                     <a href="mailto:chingun@umich.edu"> email </a>
