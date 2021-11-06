@@ -25,7 +25,7 @@ class Me extends Component {
                 I am a graduate student at NYU studying <a onClick={() => {this.setState({location: 'csml'})}} className="inline-link">Deep Reinforcement Learning</a> for Robotic Applications.
             </p>
             <p>
-                I spend a lot of my time developing <a href="https://gitjournal.com" className="inline-link">Gitjournal</a>, Github for notes. </p> 
+                I spend a lot of my time developing <a href="https://gitjournal.com/explore" className="inline-link">Gitjournal</a>, Github for notes. </p> 
             <p>
                 Before grad school, I worked as a firmware engineer at <a href="https://apple.com" className="inline-link">Apple</a>.
             </p> 
@@ -79,7 +79,7 @@ class Me extends Component {
 
                 </p>
                 <p>
-                <a href="https://gitjournal.com" className="inline-link">Git Journal</a>: A version controlled journalling application, built using the <b>MERN</b> stack, that offer a new kind of writing and authoring experience.
+                <a href="https://gitjournal.com/explore" className="inline-link">Git Journal</a>: A version controlled journalling application, built using the <b>MERN</b> stack, that offer a new kind of writing and authoring experience.
                 </p>
                 <p>
                 <a href="https://lookingbus.com/" className="inline-link">Looking bus</a>: An <b>android app</b> that communicates with street beacon devices to make travel on buses easier and safer for blind or visually impaired people.
