@@ -6,15 +6,20 @@ import layer4 from './brain/layer4.png';
 import heart from './circuit/retroheart.png';
 import circuit from './circuit/retroboardclean.png';
 import { AiFillGithub, AiFillInstagram, AiFillMail } from "react-icons/ai";
+import '../css/MeStyle.css';
 
 
 class Me extends Component {
     constructor(props){
         super(props);
+        const current = new Date();
+        const months = ['Jan','Feb','Mar','Apr','May','June','Jul','Aug','Sep','Oct','Nov','Dec']
+        const date = `${current.getDate()} ${months[current.getMonth()]} ${current.getFullYear()}`
 
         this.state = {
             location: 'about', // can be ABOUT || EMBEDDED || COMPSCI || ML
-            items: []
+            items: [],
+            date: date
         }
     }
 
@@ -128,28 +133,35 @@ class Me extends Component {
         </div>);
 
     }
-
+    
     render(){
         return(
-        <div className="main-container">
-            <div className="navbar">
-                <h1>  
-                    <a className="h1-logo" onClick={() => {this.setState({location: 'about'})}}> chingun kh </a>
-                </h1>
-                <p className="navbar-links">
-                    <a onClick={() => {this.setState({location: 'embedded'})}}> Firmware </a>
-                    <a onClick={() => {this.setState({location: 'csml'})}}> CS & ML </a>
-                    <a href="https://www.linkedin.com/in/chingun-khasar-93157a11a/"> linkedin </a>
-                    <a href="mailto:chingun@umich.edu"> email </a>
-                    <a href="https://github.com/chingun"> git </a>
-                </p>
-            </div>
-            {this.state.location === "csml" ? this.csml() : this.state.location === "embedded" ? this.embedded() : this.about()}
-            <br/>
-            <p className="footnotes">
-            © All Rights Reserved by Chingun Khasar
-            </p>
-        </div>)
+        <>
+            {/* {this.state.location === "screener" ? this.screener():  */}
+                <div className="main-container">
+                    <div className="navbar">
+                        <h1>  
+                            <a className="h1-logo" onClick={() => {this.setState({location: 'about'})}}> chingun kh </a>
+                        </h1>
+                        <p className="navbar-links">
+                            <a onClick={() => {this.setState({location: 'embedded'})}}> Firmware </a>
+                            <a onClick={() => {this.setState({location: 'csml'})}}> CS & ML </a>
+                            <a href="https://www.linkedin.com/in/chingun-khasar-93157a11a/"> linkedin </a>
+                            <a href="mailto:chingun@umich.edu"> email </a>
+                            <a href="https://github.com/chingun"> git </a>
+                            {/* <a onClick={() => {this.setState({location: 'screener'})}}> screener </a> */}
+                        </p>
+                    </div>
+                    {this.state.location === "csml" ? this.csml() : this.state.location === "embedded" ? this.embedded() 
+                    :  this.state.location === "screener" ? this.screener() : this.about()}
+                    <br/>
+                    <p className="footnotes">
+                    © {this.state.date} All Rights Reserved by Chingun Khasar 
+                    </p>
+                </div>
+            {/* } */}
+        </>
+        )
     }
 }
 
