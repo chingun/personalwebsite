@@ -7,7 +7,6 @@ import heart from './circuit/retroheart.png';
 import circuit from './circuit/retroboardclean.png';
 import { AiFillGithub, AiFillInstagram, AiFillMail } from "react-icons/ai";
 
-import '../css/Screener.css';
 
 class Screener extends Component {
     constructor(props){
@@ -147,8 +146,8 @@ class Screener extends Component {
                     cellSpacing={0}
                     border={0}
                     className="message"
-                >
-                    <tbody>
+                    style={{  fontFamily: 'Helvetica,Arial,sans-serif' }}>
+                    <tbody style={{  fontFamily: 'Helvetica,Arial,sans-serif' }}>
                     <tr>
                         <td>
                         <font size={-1}>
@@ -187,8 +186,7 @@ class Screener extends Component {
                                                 style={{
                                                     maxWidth: 550,
                                                     margin: "0 auto",
-                                                    fontFamily:
-                                                    '"Gotham SSm A","Gotham SSm B",Helvetica,Arial,sans-serif',
+                                                    fontFamily: 'Helvetica,Arial,sans-serif',
                                                     border: "none",
                                                     borderCollapse: "collapse"
                                                 }}
@@ -207,6 +205,7 @@ class Screener extends Component {
                                                         <h1
                                                         style={{
                                                             fontWeight: "bold",
+                                                            fontFamily: 'Helvetica,Arial,sans-serif',
                                                             fontSize: "1rem",
                                                             lineHeight: "1.5rem",
                                                             color: "#fff",
@@ -252,6 +251,7 @@ class Screener extends Component {
                                                     >
                                                         <p
                                                         style={{
+                                                            fontFamily: 'Helvetica,Arial,sans-serif',
                                                             fontWeight: "bold",
                                                             fontSize: "1.5rem",
                                                             lineHeight: "100%",
@@ -264,6 +264,7 @@ class Screener extends Component {
                                                         </p>
                                                         <p
                                                         style={{
+                                                            fontFamily: 'Helvetica,Arial,sans-serif',
                                                             fontWeight: "bold",
                                                             fontSize: "1.5rem",
                                                             lineHeight: "100%",

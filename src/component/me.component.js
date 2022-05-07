@@ -6,7 +6,6 @@ import layer4 from './brain/layer4.png';
 import heart from './circuit/retroheart.png';
 import circuit from './circuit/retroboardclean.png';
 import { AiFillGithub, AiFillInstagram, AiFillMail } from "react-icons/ai";
-import '../css/MeStyle.css';
 
 
 class Me extends Component {
