@@ -174,7 +174,8 @@ class Screener extends Component {
                             <tbody>
                             <tr>
                                 <td>
-                                <div style={{ overflow: "hidden" }}>
+                                <div style={{ overflow: "hidden" ,
+                                                            fontFamily: 'Helvetica,Arial,sans-serif'}}>
                                     <font size={-1}>
                                     <div>
                                         <table role="presentation" width="100%">
@@ -233,7 +234,8 @@ class Screener extends Component {
                                                         <p
                                                         style={{
                                                             color: "#ffffff!important",
-                                                            fontSize: ".9rem"
+                                                            fontSize: ".9rem",
+                                                            fontFamily: 'Helvetica,Arial,sans-serif'
                                                         }}
                                                         >
                                                         For access to NYU buildings, you must
@@ -299,11 +301,14 @@ class Screener extends Component {
                                                 >
                                                 <tbody>
                                                     <tr>
-                                                    <td style={{ paddingBottom: 20 }}>
-                                                        <p style={{ paddingTop: 15 }}>
+                                                    <td style={{ paddingBottom: 20 ,
+                                                            fontFamily: 'Helvetica,Arial,sans-serif'}}>
+                                                        <p style={{ paddingTop: 15 ,
+                                                            fontFamily: 'Helvetica,Arial,sans-serif'}} >
                                                         <strong
                                                             style={{
-                                                            textTransform: "uppercase"
+                                                            textTransform: "uppercase",
+                                                            fontFamily: 'Helvetica,Arial,sans-serif'
                                                             }}
                                                         >
                                                             Remember
@@ -337,7 +342,8 @@ class Screener extends Component {
                                                         <p>
                                                         <strong
                                                             style={{
-                                                            textTransform: "uppercase"
+                                                            textTransform: "uppercase",
+                                                            fontFamily: 'Helvetica,Arial,sans-serif'
                                                             }}
                                                         >
                                                             If You Start To Feel Sick
