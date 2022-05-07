@@ -155,7 +155,7 @@ class Screener extends Component {
                         </font>
                         </td>
                         <td align="right">
-                        <font size={-1}>{date} at 9:26 AM</font>
+                        <font size={-1}>{this.state.date} at 9:26 AM</font>
                         </td>
                     </tr>
                     <tr>
