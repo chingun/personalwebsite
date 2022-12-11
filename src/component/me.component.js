@@ -130,7 +130,7 @@ class Me extends Component {
                 <div className="navbar">
                     <h1><a className="h1-logo" onClick={() => {this.setState({location: 'about'})}} href="/#"> chingun kh </a> </h1>
                     <p className="navbar-links">
-                        <a onClick={() => {this.setState({location: 'ml'})}} href="/#"> AI Research </a>
+                        <a onClick={() => {this.setState({location: 'ml'})}} href="/#"> Research </a>
                         <a onClick={() => {this.setState({location: 'cs'})}} href="/#"> Software </a>
                         <a onClick={() => {this.setState({location: 'embedded'})}} href="/#"> Embedded  </a>
                         <a href="https://www.linkedin.com/in/chingun-khasar-93157a11a/"> linkedin </a>
