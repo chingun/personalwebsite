@@ -6,6 +6,8 @@ import layer4 from './brain/layer4.png';
 import heart from './circuit/retroheart.png';
 import circuit from './circuit/retroboardclean.png';
 import { AiFillGithub, AiFillInstagram, AiFillMail } from "react-icons/ai";
+import fdl from "./papers/FDL.pdf";
+import dl from "./papers/DL.pdf";
 
 
 class Me extends Component {
@@ -24,90 +26,81 @@ class Me extends Component {
 
     about(){
         return(
-            <div className="body">
-            <p>
-                I am a graduate student at NYU studying <a onClick={() => {this.setState({location: 'csml'})}} className="inline-link">Deep Reinforcement Learning</a> for Robotic Applications.
-            </p>
-            <p>
-                I spend a lot of my time developing <a href="https://gitjournal.com/explore" className="inline-link">Gitjournal</a>, Github for notes. </p> 
-            <p>
-                Before grad school, I worked as a firmware engineer at <a href="https://apple.com" className="inline-link">Apple</a>.
-            </p> 
-            <p>
-                I am an computer engineer who love building awesome things.</p><p>
-                I professionally develop <b>firmware</b> in Internet of Things & <br/><b>full-stack</b> in web apps. <br/>
+        <div className="body">
+            <p> I am a graduate student at NYU researching <a href="https://github.com/jiachenzhu/VICReceiver" onClick={() => {this.setState({location: 'csml'})}} className="inline-link">Self-Supervised Learning</a> and <a href="/#" onClick={() => {this.setState({location: 'csml'})}} className="inline-link">Deep Reinforcement Learning</a>. </p>
+            <p> I am also building a startup <a href="https://www.absurdum.in" className="inline-link">Absurdum</a>, a  democratized fine art print website. </p> 
+            <p> Before grad school, I worked at <a href="https://apple.com" className="inline-link">Apple</a> as a firmware engineer. </p>  
+        </div>
+        );
+    }
 
-                {/* i spend a lot of time w/ api’s these days, as the<br/>
-                founder of Alloy Automation (YC W20)<br/><br/>
-
-                before, i wrote code at <b>Apple</b>, <b>GitJournal</b>, & others<br/><br/>
-
-                i also spent time in VC, at Dorm Room Fund & Sway Ventures,<br/>
-                which led to my interest in no-code & dev tools<br/><br/>
-
-                during my undergrad at University of Michigan, i helped run<br/>
-                HackLodge, Harvard China Forum, HackHarvard<br/><br/>
-
-                on nights i can't sleep, i'll work on NIGHTSHIFT<br/><br/>
-
-                i like foreign films, history museums, books, photography<br/> */}
-            </p>
-            {/* <p className="footnotes">
-            i like foreign films, history museums, books, photography, and udon, which i used to make at Yume <br/> <br/>
-            [63% ATL] - [4% SH] - [23% LA] - [5% BOS] - [5% SF]
-            </p> */}
+    cs(){ 
+        if (this.state.location !== "cs"){
+            return(<></>)
+        }
+          return(
+            <div className="body"> 
+                <h2>  Software </h2> 
+                <p> <a href="https://www.absurdum.in" className="inline-link" alt="st" >Absurdum</a>: a democratized ecommerce for artists to publish and profit from their artworks, built using <b>NextJS</b>, <b>GraphQL</b>, <b>MongoDB</b> with <b>Google Cloud Platform</b>.
+                </p>
+                <p> <a href="https://github.com/chingun/gitjournal-mvp" className="inline-link" alt="st" >Git Journal</a>: A version controlled journalling application, built using the <b>MERN</b> stack, that offer a new kind of writing and authoring experience.
+                </p>
+                <p> <a href="https://lookingbus.com/" className="inline-link" alt="st" >Looking bus</a>: An <b>android app</b> that communicates with street beacon devices to make travel on buses easier and safer for blind or visually impaired people.
+                </p>
+                <p className="footnotes"> <h3>Proficient Skills:</h3> 
+                Libraries: NextJS, GraphQL, MongoDB, ExpressJS, ReactJS and NodeJS<br/>
+                Languages: C, C++, Javascript, Python, Swift, Assembly and Verilog </p> <br/> 
             </div>
         );
     }
 
-    csml(){ 
-        if (this.state.location !== "csml"){
-            return(<></>)
-        }
-          return(
+    ml(){ 
+        if (this.state.location !== "ml"){ return(<></>) }
+        return (
             <div className="body">
                 <div className="brainbase">
                     <div class="braintop bottom">
-                        <img src={layer3} className="braintop bottom"/>
+                        <img src={layer3} alt="st" className="braintop bottom"/>
                     </div>	
                     <div class="braintop middle">
-                        <img src={layer2} className="braintop middle"/>
+                        <img src={layer2} alt="st" className="braintop middle"/>
                     </div>	
                     <div class="braintop top">
-                        <img src={layer1} className="braintop top"/>
+                        <img src={layer1} alt="st" className="braintop top"/>
                     </div>	
-                    <img src={layer4}/>
+                    <img src={layer4} alt="st"/>
                 </div><br/><br/>
-                <h2>  Software </h2>
-                <p>
-
+                <h2>AI Projects</h2> 
+                <p> <a href="https://github.com/jiachenzhu/VICReceiver" className="inline-link" alt="st">Self-Supervised Driving</a>: developing a self supervised method to solve autonomous vision.
                 </p>
-                <p>
-                <a href="https://gitjournal.com/explore" className="inline-link">Git Journal</a>: A version controlled journalling application, built using the <b>MERN</b> stack, that offer a new kind of writing and authoring experience.
-                </p>
-                <p>
-                <a href="https://lookingbus.com/" className="inline-link">Looking bus</a>: An <b>android app</b> that communicates with street beacon devices to make travel on buses easier and safer for blind or visually impaired people.
-                </p>
+                <p> <a className="inline-link" alt="st">Provable Robust Defenses against Data Poisoning Attacks</a>: Within the scope of this project, my team analyzed provable robustness against data poisoning attacks from the lenses of <br/><br/> a) randomized smoothing, <br/> b) data partition aggregation <br/> c) differential privacy.
+                </p> <embed src={fdl} type="application/pdf" 
+                            frameBorder="0"
+                            scrolling="auto"
+                            height="500px"
+                            width="100%" />
+                <p> <a href="https://www.absurdum.in" className="inline-link" alt="st">Benchmark for Instance-Level Recognition</a>: An efficient model for large-scale landmark recognition and retrieval.
+                </p> <embed src={dl} type="application/pdf" 
+                            frameBorder="0"
+                            scrolling="auto"
+                            height="500px"
+                            width="100%" />
                 <p className="footnotes">
                 <h3>Proficient Skills:</h3>
-                Libraries: Pytorch, Redux, MongoDB, ExpressJS, ReactJS and NodeJS<br/>
-                Languages: C, C++, Javascript, Python, Swift, Assembly and Verilog
-                </p> <br/>
-                {/* // <p> */}
+                ML Tools: Pytorch, Redux, NextJS, GraphQL, MongoDB, ExpressJS, ReactJS and NodeJS<br/> 
+                </p> <br/> 
             </div>
         );
     }
       
     embedded(){
-        if (this.state.location !== "embedded"){
-            return(<></>)
-        }
+        if (this.state.location !== "embedded"){ return(<></>) }
         return(
             <div className="body">
                 <div className="embedbase">
-                    <img src={circuit} className="embed"/>
+                    <img src={circuit} className="embed" alt="st"/>
                     <div className="embed top">
-                        <img src={heart} className="embed top"/>
+                        <img src={heart} className="embed top" alt="st"/>
                     </div>	
                 </div><br/><br/><br/>
                 <h2> Firmware Projects:</h2>
@@ -119,8 +112,7 @@ class Me extends Component {
                 <h3>Proficient Skills:</h3>
                  RTOS development <br/>Protocols & JTAG debugging<br/>Device Driver programming (LKM)<br/>FPGA & Assembly development<br/>Hardware Bring <br/>GPIO, I2C, SPI, UART and BLE communication
                 </p> <br/>
-            </div>
-        );
+            </div> );
     }
 
     bottom_links(){
@@ -130,36 +122,29 @@ class Me extends Component {
             <AiFillInstagram href="https://www.instagram.com/chingunkh"/>
             <AiFillMail href="mailto:chingun@umich.edu"/>
         </div>);
-
     }
     
     render(){
-        return(
-        <>
-            {/* {this.state.location === "screener" ? this.screener():  */}
-                <div className="main-container">
-                    <div className="navbar">
-                        <h1>  
-                            <a className="h1-logo" onClick={() => {this.setState({location: 'about'})}}> chingun kh </a>
-                        </h1>
-                        <p className="navbar-links">
-                            <a onClick={() => {this.setState({location: 'embedded'})}}> Firmware </a>
-                            <a onClick={() => {this.setState({location: 'csml'})}}> CS & ML </a>
-                            <a href="https://www.linkedin.com/in/chingun-khasar-93157a11a/"> linkedin </a>
-                            <a href="mailto:chingun@umich.edu"> email </a>
-                            <a href="https://github.com/chingun"> git </a>
-                            {/* <a onClick={() => {this.setState({location: 'screener'})}}> screener </a> */}
-                        </p>
-                    </div>
-                    {this.state.location === "csml" ? this.csml() : this.state.location === "embedded" ? this.embedded() 
-                    :  this.state.location === "screener" ? this.screener() : this.about()}
-                    <br/>
-                    <p className="footnotes">
-                    © {this.state.date} All Rights Reserved by Chingun Khasar 
+        return (
+            <div className="main-container">
+                <div className="navbar">
+                    <h1><a className="h1-logo" onClick={() => {this.setState({location: 'about'})}} href="/#"> chingun kh </a> </h1>
+                    <p className="navbar-links">
+                        <a onClick={() => {this.setState({location: 'ml'})}} href="/#"> AI Research </a>
+                        <a onClick={() => {this.setState({location: 'cs'})}} href="/#"> Software </a>
+                        <a onClick={() => {this.setState({location: 'embedded'})}} href="/#"> Embedded  </a>
+                        <a href="https://www.linkedin.com/in/chingun-khasar-93157a11a/"> linkedin </a>
+                        <a href="mailto:chingun@umich.edu"> email </a>
+                        <a href="https://github.com/chingun"> git </a> 
                     </p>
                 </div>
-            {/* } */}
-        </>
+                {this.state.location === "ml" ? this.ml() : this.state.location === "cs" ? this.cs() : this.state.location === "embedded" ? this.embedded() 
+                :  this.state.location === "screener" ? this.screener() : this.about()}
+                <br/>
+                <p className="footnotes">
+                © {this.state.date} All Rights Reserved by Chingun Khasar 
+                </p>
+            </div> 
         )
     }
 }
