@@ -8,6 +8,7 @@ import circuit from './circuit/retroboardclean.png';
 import { AiFillGithub, AiFillInstagram, AiFillMail } from "react-icons/ai";
 import fdl from "./papers/FDL.pdf";
 import dl from "./papers/DL.pdf";
+import metaRL from "./papers/Image_MetaRL.pdf";
 
 
 class Me extends Component {
@@ -75,6 +76,13 @@ class Me extends Component {
                 </p>
                 <p> <a className="inline-link" alt="st">Provable Robust Defenses against Data Poisoning Attacks</a>: Within the scope of this project, my team analyzed provable robustness against data poisoning attacks from the lenses of <br/><br/> a) randomized smoothing, <br/> b) data partition aggregation <br/> c) differential privacy.
                 </p> <embed src={fdl} type="application/pdf" 
+                            frameBorder="0"
+                            scrolling="auto"
+                            height="500px"
+                            width="100%" />
+                <p> <a href="https://github.com/jiachenzhu/VICReceiver" className="inline-link" alt="st">Meta RL</a>: Image based Meta Reinforcement Learning agent.
+                </p> 
+                <embed src={metaRL} type="application/pdf" 
                             frameBorder="0"
                             scrolling="auto"
                             height="500px"
